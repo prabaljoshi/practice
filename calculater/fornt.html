@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div class="calculator">
+    <div id="display">0</div>
+    <div class="buttons">
+        <button onclick="calculator.clearDisplay()">C</button>
+        <button onclick="calculator.toggleSign()">±</button>
+        <button onclick="calculator.percentage()">%</button>
+        <button class="a" onclick="calculator.appendOperator('÷')">÷</button>
+        
+        <button onclick="calculator.appendNumber('7')">7</button>
+        <button onclick="calculator.appendNumber('8')">8</button>
+        <button onclick="calculator.appendNumber('9')">9</button>
+        <button class="a" onclick="calculator.appendOperator('×')">×</button>
+        
+        <button onclick="calculator.appendNumber('4')">4</button>
+        <button onclick="calculator.appendNumber('5')">5</button>
+        <button onclick="calculator.appendNumber('6')">6</button>
+        <button class="a" onclick="calculator.appendOperator('-')">-</button>
+        
+        <button onclick="calculator.appendNumber('1')">1</button>
+        <button onclick="calculator.appendNumber('2')">2</button>
+        <button onclick="calculator.appendNumber('3')">3</button>
+        <button class="a" onclick="calculator.appendOperator('+')">+</button>
+        
+        <button onclick="calculator.appendNumber('0')">0</button>
+        <button onclick="calculator.appendNumber('.')">.</button>
+        <button onclick="calculator.deleteLast()">⌫</button>
+        <button class="equal" onclick="calculator.calculate()">=</button>  
+    </div>
+</div>
+<script src="work.js"></script>
+</body>
+</html>
